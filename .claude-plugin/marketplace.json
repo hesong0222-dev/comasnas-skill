@@ -1,0 +1,15 @@
+{
+  "name": "comasnas",
+  "description": "ComAsNas: let AI sessions reach files and run commands on your own computer",
+  "owner": {
+    "name": "ComAsNas",
+    "url": "https://comasnas.com"
+  },
+  "plugins": [
+    {
+      "name": "comasnas",
+      "source": "./plugins/comasnas",
+      "description": "Reach files and run commands on your own Mac or PC from Claude Code, through the ComAsNas app"
+    }
+  ]
+}
