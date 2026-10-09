@@ -66,6 +66,9 @@ Paths are paths on the user's computer, not in this session's machine. Use absol
 | Run a command (Mac, when allowed) | `comasnas exec --cwd ~/code/app -- npm test` |
 | Long command | `comasnas exec --detach -- ...`, then `comasnas jobs`, `comasnas logs -f JOB`, `comasnas kill JOB` |
 
+For shell syntax (`&&`, pipes, `;`) pass the whole line as one argument:
+`comasnas exec -- 'npm test && npm run build'`. Several arguments are one command, passed unchanged.
+
 Add `--json` to any command for machine-readable output. To edit a file: `get` it, edit the copy
 here, `put --overwrite` it back.
 
